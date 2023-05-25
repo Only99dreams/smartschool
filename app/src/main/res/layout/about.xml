@@ -1,0 +1,50 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="ABOUT "
+				android:textSize="25sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="SmartSchool is an innovative artificial intelligence (AI) learning mobile application that provides students with personalized learning experiences.\n\n It uses advanced AI algorithms (ChatGPT-3) to quickly analyze a student's performance and tailor the instruction to their individual needs. With SmartSchool, students can learn at their own pace and focus on areas where they need improvement.\n\n The app also comes with a wide range of interactive tools and resources to help students stay engaged and motivated.\n\n SmartSchool has been designed to keep students engaged and motivated, providing feedback and helping them develop the skills needed to achieve their learning goals.\n\nDeveloper: Thompson Emmanuel \n\ngmail: Ogiethompson11\@gmail.com \n\nphone:07030553134\n\nContribution from Ese Ebhota\n\ncontact:08109094608"
+				android:textSize="20sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
